@@ -1,0 +1,15 @@
+<h1>test</h1>
+<ul>
+    <li>FirstName</li>
+    <li>LastName</li>
+    <li>Pseudo</li>
+    <li>Email</li>
+    <li>PhoneNumber</li>
+</ul>
+
+<ul *ngIf="User">
+    <li *ngFor="let u of User">
+        
+        {{ u.firstname }}
+    </li>
+</ul>
