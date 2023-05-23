@@ -23,6 +23,18 @@ export class ComponentsComponent implements OnInit {
       .subscribe((data) => this.User = data);
   }
 
+  selectedUser!: string;
+  showDetails (url: string): void {
+    this.selectedUser = url;
+  }
+
+  delete(id : number):void{
+    this._UserService
+    .deleteUser(id)
+    
+  }
+
+  
 
 
 }
