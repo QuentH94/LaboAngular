@@ -1,0 +1,27 @@
+
+<form [formGroup]="form" (ngSubmit)="createNewUser()">
+    <label>Email :</label>
+    <input type="email" formControlName="email">
+    <ng-container *ngIf="form.controls['email'].touched">
+        <p *ngIf="form.controls['email'].errors">
+            {{ form.controls['email'].errors['name'] }}
+        </p>
+    </ng-container>
+
+    <label>Password :</label>
+    <input type="password" formControlName="password">
+
+    <label>Confirm Password :</label>
+    <input type="password" formControlName="passwordConfirmation">
+    <ng-container *ngIf="form.controls['passwordConfirmation'].touched">
+        <p *ngIf="form.errors">
+            {{ form.errors['twoPasswordCheck'] }}
+        </p>
+    </ng-container>
+    <label>Pseudo :</label>
+    <input type="text" formControlName="pseudo">
+
+
+    <button [disabled]="form.invalid">Envoyer</button>
+
+</form>

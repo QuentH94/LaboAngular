@@ -1,15 +1,10 @@
-<h1>test</h1>
-<ul>
-    <li>FirstName</li>
-    <li>LastName</li>
-    <li>Pseudo</li>
-    <li>Email</li>
-    <li>PhoneNumber</li>
-</ul>
+<h1>Liste des utilisateurs</h1>
 
 <ul *ngIf="User">
-    <li *ngFor="let u of User">
+    <li *ngFor="let u of User">   
+        <button (click)="showDetails">Détails</button>  
+        <button (click)="delete(u.id)">del</button> 
+        {{ u.pseudo }}   
         
-        {{ u.firstname }}
     </li>
 </ul>

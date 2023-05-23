@@ -14,3 +14,14 @@ export interface Role{
     admin : number,
     modo : number
 }
+
+export interface createUser{
+    email : string,
+    password : string,
+    passwordConfirmation : string,
+    pseudo : string,
+}
+export interface login{
+    email : string,
+    password : string,
+}
