@@ -1,1 +1,10 @@
-<p>edit-user works!</p>
+<form [formGroup]="form" (ngSubmit)="updateThisUser()">
+    <label>Firstname :</label>
+    <input type="text" formControlName="firstname">
+    <label>Lastname :</label>
+    <input type="text" formControlName="lastname">   
+    <label>Pseudo :</label>
+    <input type="text" formControlName="pseudo">
+    <button [disabled]="form.invalid">Envoyer</button>
+
+</form>

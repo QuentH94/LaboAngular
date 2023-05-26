@@ -2,8 +2,8 @@
 
 <ul *ngIf="User">
     <li *ngFor="let u of User">   
-        <button (click)="showDetails">Détails</button>  
-        <button (click)="delete(u.id)">del</button> 
+        <button (click)='updateUserRoute(u.id)'>Modify</button>  
+        <button (click)='delete(u.id)'>❌</button> 
         {{ u.pseudo }}   
         
     </li>

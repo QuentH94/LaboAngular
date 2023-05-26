@@ -13,6 +13,7 @@ import { LoginComponent } from './components/login/login.component';
 import { EditUserComponent } from './components/edit-user/edit-user.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,8 @@ import { EditUserComponent } from './components/edit-user/edit-user.component';
     CreateUserComponent,
     HomeComponent,
     LoginComponent,
-    EditUserComponent
+    EditUserComponent,
+    
   ],
   imports: [
     BrowserModule,

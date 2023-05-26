@@ -25,3 +25,9 @@ export interface login{
     email : string,
     password : string,
 }
+
+export interface changeData{
+    firstname: string,
+    lastname: string,
+    pseudo: string,
+}
